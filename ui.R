@@ -45,7 +45,8 @@ shinyUI(fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       strong("\"breakout\" function code:"), verbatimTextOutput("breakoutCode"),
-      plotOutput("distPlot")
+      checkboxInput("fancy", "Fancy plot (shows mean shifts)"),
+      plotOutput("plot")
     )
   )
 ))
