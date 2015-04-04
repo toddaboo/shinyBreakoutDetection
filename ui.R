@@ -6,7 +6,6 @@
 #
 
 library(shiny)
-library(shinyBS)
 
 shinyUI(fluidPage(
   tags$head(tags$style("#breakoutCode {color: green;
