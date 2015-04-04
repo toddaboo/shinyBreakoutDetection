@@ -32,7 +32,8 @@ shinyServer(function(input, output) {
   
   output$distPlot <- renderPlot({
     res <- dat()
-    
+    ## use ggplot to visualize the mean shift at each break/change point
+    ## the stock plot for breakout only shows the breaks
     #determine means of each segment
     breaks <- c(1, res$loc, nrow(res$plot$data))
     
